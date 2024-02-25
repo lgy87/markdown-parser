@@ -1,5 +1,19 @@
 {
   "dependencies": {
     "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0"
+  },
+  "sourceMaps": true,
+  "retainLines": true,
+  "babel": {
+    "presets": [
+      "stage-0"
+    ],
+    "sourceMaps": true,
+    "retainLines": true
   }
 }

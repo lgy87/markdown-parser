@@ -4,14 +4,12 @@
  * lgy87@foxmail.com
  */
 export default {
-  pattern: forbidden(),
-  token: null,
-  matched: null,
-
   init ({
     src = "",
   } = {}) {
     this.src = src
+    this.matched = null
+    this.token = null
 
     return this
   },
@@ -49,12 +47,4 @@ export default {
       this.token,
     ]
   }
-}
-
-function forbidden () {
-  return new Proxy({}, {
-    get () {
-      throw new Error ("You must specify the [pattern] field!")
-    }
-  })
 }

@@ -6,7 +6,7 @@
 import base from "./base"
 
 const hr = {
-  pattern: /^ {0,3}((?:- *){3,}|(?:_ *){3,}|(?:\* *){3,})(?:\n+|$)/,
+  pattern: /^-{3,}([- ]*)(?:\n+|$)/,
 
   process () {
     this.token = {

@@ -6,7 +6,7 @@
 import base from "./base"
 
 const heading = {
-  pattern: /^ *(#{1,6}) *([^\n]+?) *(?:#+ *)?(?:\n+|$)/,
+  pattern: /^(#{1,6}) +([^\n]+?) *(?:\n+|$)/,
 
   process () {
     this.token = {
